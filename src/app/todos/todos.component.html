@@ -1,0 +1,17 @@
+<div class="todo-container">
+  <form [formGroup]="form">
+    <input formControlName="title" placeholder="Type here..." />
+    <button (click)="onAddTodo()">Add Todo</button>
+  </form>
+  <p *ngIf="form.invalid && (form.dirty || form.touched)" class="error">
+    Title is required.
+  </p>
+
+  <ul class="todo-list">
+    @for (todo of query.data(); track todo.title) {
+      <li>{{ todo.title }}</li>
+    }
+  </ul>
+</div>
+
+<angular-query-devtools initialIsOpen />

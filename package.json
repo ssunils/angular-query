@@ -1,0 +1,42 @@
+{
+  "name": "angular-starter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ng": "ng",
+    "start": "concurrently \"node server.js\" \"ng serve\"",
+    "build": "ng build"
+  },
+  "dependencies": {
+    "@angular/animations": "^17.2.0",
+    "@angular/common": "^17.2.0",
+    "@angular/compiler": "^17.2.0",
+    "@angular/core": "^17.2.0",
+    "@angular/forms": "^17.2.0",
+    "@angular/platform-browser": "^17.2.0",
+    "@angular/router": "^17.2.0",
+    "@tanstack/angular-query-devtools-experimental": "^5.24.8",
+    "@tanstack/angular-query-experimental": "5.24.8",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "lowdb": "^7.0.1",
+    "rxjs": "^7.8.1",
+    "tslib": "^2.5.0",
+    "zone.js": "~0.14.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.2.0",
+    "@angular/cli": "^17.2.0",
+    "@angular/compiler-cli": "^17.2.0",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.24",
+    "concurrently": "^8.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.3.0"
+  },
+  "overrides": {
+    "@angular-devkit/build-angular": {
+      "piscina": "~4.2.0"
+    }
+  }
+}

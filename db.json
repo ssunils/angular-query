@@ -1,0 +1,16 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "Start the day with workout"
+    },
+    {
+      "id": "2",
+      "title": "Buy groceries"
+    },
+    {
+      "id": "3",
+      "title": "Go to the gym"
+    }
+  ]
+}
